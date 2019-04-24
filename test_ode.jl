@@ -10,4 +10,4 @@ const p=parameter
 #Setup
 prob = ODEProblem(f,u0,tspan,p)
 #solve ode (given tolerances)
-@time sol=solve(prob,Rodas5(),reltol=1e-10,abstol=1e-12,force_dtmin=true,maxiters=10^14)
+@time sol=solve(prob,Rodas5(),reltol=1e-12,abstol=1e-12,force_dtmin=true,maxiters=10^14)
