@@ -5,4 +5,4 @@ Simplified project to evaluate the efficiency of the differential equation solve
 
 The files **ic.jld2** and **parameter.jld2** contain the initial conditions `u0` and input parameters `p` respectively.
 
-Given the size and non-linearity of the ODE, computation times take a couple of hours for 10000 [s] of simulation. Run shorter time span `tspan` for quicker simulations. The first block slip occurs over `tspan=(0.0,400.0)`.
+Given the size and non-linearity of the ODE, computation times take a couple of hours for 10000 [s] of simulation. Run a shorter time span `tspan` for quicker simulations. The first block slip occurs over `tspan=(0.0,400.0)`.
