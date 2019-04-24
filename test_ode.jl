@@ -1,9 +1,10 @@
 using DifferentialEquations,ParameterizedFunctions,JLD2
-using test_functions #local functions
+include("test_functions.jl")
+using Main.test_functions #local functions
 #initial Condition
 @load "ic.jld2" u0
-#time domain
-tspan = (0.0,10000.0)
+#desired time domain
+tspan = (0.0,10000.0) #to shorten for quicker CPU times
 #import array containing Parameters
 @load "parameter.jld2" parameter
 const p=parameter
